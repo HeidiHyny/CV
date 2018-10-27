@@ -10,6 +10,10 @@ import { TabsPage } from './tabs.page';
 import { ContactPageModule } from '../contact/contact.module';
 import { AboutPageModule } from '../about/about.module';
 import { HomePageModule } from '../home/home.module';
+// Adding the tabs menu to other pages as well
+import { CVPageModule } from '../cv/cv.module';
+import { ExtraCVPageModule } from '../extra-cv/extra-cv.module';
+import { ProjectsPageModule } from '../projects/projects.module';
 
 @NgModule({
   imports: [
@@ -19,7 +23,11 @@ import { HomePageModule } from '../home/home.module';
     TabsPageRoutingModule,
     HomePageModule,
     AboutPageModule,
-    ContactPageModule
+    ContactPageModule,
+    // Adding the ipmports here too
+    CVPageModule,
+    ProjectsPageModule,
+    ExtraCVPageModule
   ],
   declarations: [TabsPage]
 })

@@ -1,11 +1,21 @@
+
+<!--Here we will add the list of tab-menu items (no labels)-->
 <ion-tabs>
-  <ion-tab label="Home" icon="home" href="/tabs/(home:home)">
+  <ion-tab icon="home" href="/tabs/(home:home)">
     <ion-router-outlet name="home"></ion-router-outlet>
   </ion-tab>
-  <ion-tab label="About" icon="information-circle" href="/tabs/(about:about)">
+  <ion-tab icon="person" href="/tabs/(about:about)">
     <ion-router-outlet name="about"></ion-router-outlet>
   </ion-tab>
-  <ion-tab label="Contact" icon="contacts" href="/tabs/(contact:contact)">
-    <ion-router-outlet name="contact"></ion-router-outlet>
+  <ion-tab icon="briefcase" href="/tabs/(CV:CV)">
+    <ion-router-outlet name="CV"></ion-router-outlet>
   </ion-tab>
+  <ion-tab icon="code" href="/tabs/(projects:projects)">
+    <ion-router-outlet name="projects"></ion-router-outlet>
+  </ion-tab>
+  <ion-tab icon="add" href="/tabs/(extra-cv:extra-cv)">
+    <ion-router-outlet name="extra-cv"></ion-router-outlet>
+  </ion-tab>
+  
 </ion-tabs>
+

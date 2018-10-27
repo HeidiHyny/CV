@@ -1,23 +1,49 @@
+<!--contact.page.html file code for left side menu-->
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      Contact
-    </ion-title>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Contact</ion-title>
   </ion-toolbar>
-</ion-header>
-
-<ion-content>
+ </ion-header>
+ <ion-content>
+   <!--Adding some simple text-element inside a styled list-item-->
   <ion-list>
-    <ion-list-header>
-      <ion-label>
-        Follow us on Twitter
-      </ion-label>
-    </ion-list-header>
-    <ion-item>
-      <ion-label>
-        <ion-icon name="logo-ionic" slot="start"></ion-icon>
-        @ionicframework
-      </ion-label>
-    </ion-item>
+  
+  <ion-item >
+    <h2 padding="10px">Heidi Hynynen</h2>
+      <p>
+      Streetname 10<br>
+      00100 Helsinki</p>
+  </ion-item>
   </ion-list>
-</ion-content>
+  <!--Adding a card with a list for some contact info with icons-->
+  <ion-card>
+      <ion-card-content>
+        
+          <ion-list>
+<ion-list-header>Get in touch</ion-list-header>
+              <ion-item>
+                <ion-icon name="call" item-start padding="5px"></ion-icon>
+                +358 44 123456
+              </ion-item>
+
+              <ion-item>
+                  <ion-icon name="mail" item-start padding="5px"></ion-icon>
+                  heidi@email.com
+                </ion-item>
+<!--Wrapping the items in a href so they act as links-->
+                <a href="http://www.linkedin.com/in/heidi-hynynen-36b6a098"><ion-item>
+                    <ion-icon name="logo-linkedin" item-start padding="5px"></ion-icon>
+                    LinkedIn
+                  </ion-item></a>
+
+                  <a href="http://www.github.com/heidihyny"><ion-item>
+                      <ion-icon name="logo-github" item-start padding="5px"></ion-icon>
+                      Github
+                    </ion-item></a>
+</ion-list>
+</ion-card-content>
+    </ion-card>
+  </ion-content>

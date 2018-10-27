@@ -1,7 +1,36 @@
+<!--about.page.html file code for left side menu-->
 <ion-header>
   <ion-toolbar>
-    <ion-title>About</ion-title>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>About</ion-title>
   </ion-toolbar>
-</ion-header>
+ </ion-header>
+ <ion-content>
+   <!--Adding a card to show profile with image-->
+    <ion-card>
+        <img src="img/profile2.png"/>
+        <ion-card-content>
+          <ion-card-title>
+            Heidi Hynynen
+            </ion-card-title>
+         <em><p>Valuable team member</p></em>
+      <p>Innovative tech mind with experience working in mobile app development projects with service design thinking. 
+      Capable of working with a variety of technology and software solutions.</p>
+      <br>
+      <!--Adding a subtitle-header with some basic buttons for skills-->
+      <ion-card-subtitle>
+        <strong><h3>Skills</h3></strong></ion-card-subtitle>
+        
+          <p>
+            <button padding="2px" margin="4px" >Java</button>
+            <button padding="2px" margin="4px" >Ionic</button>
+            <button padding="2px" margin="4px" >HTML5</button>
+            <button padding="2px" margin="4px" >Cordova</button>
+            <button padding="2px" margin="4px" >Javascript</button>
+          </p>
 
-<ion-content></ion-content>
+</ion-card-content>
+      </ion-card>
+  </ion-content>

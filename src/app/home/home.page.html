@@ -1,10 +1,60 @@
+<!--home.page.html file code for left side menu-->
 <ion-header>
   <ion-toolbar>
-    <ion-title>Home</ion-title>
+  <ion-buttons slot="start">
+  <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>Home</ion-title>
   </ion-toolbar>
-</ion-header>
+ </ion-header>
+ <ion-content>
+  
+  <!--Adding a welcome text inside a card-->
+  <ion-card>
+    <ion-card-header>
+      <h1>Welcome to my CV!</h1>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <p>Please see on how my career and education meets your requirements. I would welcome the opportunity to meet with you in person to discuss this further.</p><br>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
-</ion-content>
+<em><p>Best wishes ,</p></em> 
+<p>Heidi Hynynen<br>
+heidi@email.com<br>
++358 44 123 456</p>
+
+    </ion-card-content>
+  </ion-card><!--End of welcome card-->
+
+  <!--Adding a list to show "reviews"-->
+<ion-list>
+    
+ <ion-item-divider>What they say</ion-item-divider>
+      
+  <ion-item>
+    <ion-thumbnail padding="5px" item-left>
+      <img src="img/profile.png">
+    </ion-thumbnail>
+    <p >Heidi is a delight to work with.<br>
+    <small>Venla - Team Member</small></p>
+  </ion-item>
+
+  <ion-item>
+      <ion-thumbnail padding="5px" item-left>
+        <img src="img/profile.png">
+      </ion-thumbnail>
+      <p >Provided on scedule!<br>
+      <small>Mikko - Client</small></p>
+    </ion-item>
+
+    <ion-item>
+        <ion-thumbnail padding="5px" item-left>
+          <img src="img/profile.png">
+        </ion-thumbnail>
+        <p >Positive words.<br>
+        <small>A happy colleague</small></p>
+      </ion-item>
+
+</ion-list><!-- end of list-->
+  </ion-content>
+  
